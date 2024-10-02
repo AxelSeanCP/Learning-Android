@@ -24,12 +24,8 @@
                 android:src="@drawable/pixel_google" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
+                style="@style/TextContent.BodyMedium.White.MarginAll"
                 android:layout_gravity="bottom"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="16dp"
                 android:background="#4D000000"
                 android:drawablePadding="4dp"
                 android:gravity="center_vertical"
@@ -39,40 +35,26 @@
         </FrameLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            style="@style/TextContent.HeadlineMedium.Bold"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
             android:text="@string/dummy_value"
             android:textSize="32sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            style="@style/TextContent.TitleMedium.Bold.MarginLeftRight"
             android:layout_marginBottom="16dp"
             android:text="@string/title"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textSize="18sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            style="@style/TextContent.BodyMedium.Gray.MarginLeftRight"
             android:layout_marginBottom="16dp"
             android:lineSpacingMultiplier="1"
             android:text="@string/content_text" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
+            style="@style/TextContent.TitleMedium.Bold.MarginLeftRight"
             android:layout_marginBottom="8dp"
             android:text="@string/specification" />
 
@@ -89,16 +71,12 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
+                    style="@style/TextContent.BodyMedium.Bold"
                     android:layout_marginEnd="16dp"
                     android:text="@string/display" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
+                    style="@style/TextContent.BodyMedium.Gray"
                     android:layout_weight="1"
                     android:text="@string/content_specs_display" />
             </TableRow>
@@ -109,17 +87,13 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/TextContent.BodyMedium.Bold"
                     android:layout_marginEnd="16dp"
-                    android:textSize="14sp"
                     android:text="@string/size" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/TextContent.BodyMedium.Gray"
                     android:layout_weight="1"
-                    android:textSize="14sp"
                     android:text="@string/content_specs_size" />
             </TableRow>
 
@@ -129,27 +103,19 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/TextContent.BodyMedium.Bold"
                     android:layout_marginEnd="16dp"
-                    android:textSize="14sp"
                     android:text="@string/battery" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/TextContent.BodyMedium.Gray"
                     android:layout_weight="1"
-                    android:textSize="14sp"
                     android:text="@string/content_specs_battery" />
             </TableRow>
         </TableLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            style="@style/TextContent.TitleMedium.Bold.MarginLeftRight"
             android:layout_marginBottom="8dp"
             android:text="@string/seller" />
 
@@ -169,19 +135,14 @@
                 android:src="@drawable/photo_2" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/TextContent.BodyMedium.Gray"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@+id/profile_image"
                 android:text="@string/my_name" />
         </RelativeLayout>
 
         <Button
-            android:text="@string/buy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp" />
+            style="@style/ButtonGeneral.SecondaryVariant"
+            android:text="@string/buy" />
     </LinearLayout>
 </ScrollView>
