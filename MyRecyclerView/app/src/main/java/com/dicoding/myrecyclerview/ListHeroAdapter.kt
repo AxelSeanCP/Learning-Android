@@ -25,10 +25,11 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adap
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val (name, description, photo) = listHero[position]
 
-        Glide.with(holder.itemView.context)
-            .load(photo) // URL Gambar
-            .into(holder.imgPhoto) // imgview mana yang akan diterapkan
+//        Glide.with(holder.itemView.context)
+//            .load(photo) // URL Gambar
+//            .into(holder.imgPhoto) // imgview mana yang akan diterapkan
 
+        holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
         holder.tvDescription.text = description
 
